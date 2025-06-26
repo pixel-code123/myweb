@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <title>クリックゲーム</title>
+  <meta charset="UTF-8">
+  <title>pixel-code123's site</title>
   <style>
-   *{
-    background-color: forestgreen;
-   }
-h1 {
-  font-family: serif;
-}
-body {
-  button:hover {
-    color:aquamarine;
+    *{
+        background-color: cadetblue;
+    }
+ h1 {
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 255, 81);
+    font-size: 40px;
   }
-}
-@keyframes slideIn{
-  from{
-    transform: translateX(-50%);
-    opacity: 0;
+  @keyframes slideIn {
+    from { 
+        transform: translateX(-50%);
+opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
   }
-  to{
-    transform: translateX(0);
-    opacity: 1;
+  h1 {
+    animation: slideIn 2s ease-out;
   }
-}
-h1 {
-  animation: slideIn 2s ease-out;
-}
-p {
-  color:darkblue
-}
-  </style>
+</style>
 </head>
 <body>
-  <h1>クリックしてみよう。β</h1>
-  <p>スコア: <span id="score">0</span></p>
-  <p>残り時間: <span id="time">10</span> 秒</p>
-  <button id="clickButton">クリック</button>
-  <button id="resetButton">リセット</button>
-
-  <script src="game.js"></script>
+  <h1>ようこそ</h1>
+  <p>ここでは自分のゲームや作品を公開していくよ。</p>
+  <p><a href="#">リンク（←のちほど追加）</a></p>
 </body>
 </html>
