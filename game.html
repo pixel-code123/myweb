@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>クリックゲーム</title>
+  <style>
+   *{
+    background-color: forestgreen;
+   }
+h1 {
+  font-family: serif;
+}
+body {
+  button:hover {
+    color:aquamarine;
+  }
+}
+@keyframes slideIn{
+  from{
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+h1 {
+  animation: slideIn 2s ease-out;
+}
+p {
+  color:darkblue
+}
+  </style>
+</head>
+<body>
+  <h1>クリックしてみよう。β</h1>
+  <p>スコア: <span id="score">0</span></p>
+  <p>残り時間: <span id="time">10</span> 秒</p>
+  <button id="clickButton">クリック</button>
+  <button id="resetButton">リセット</button>
+
+  <script src="game.js"></script>
+</body>
+</html>
